@@ -1,0 +1,9 @@
+import requests
+import json
+
+api_key = 'YOUR_API_KEY'  # вставьте ваш API ключ
+
+# функция для получения курса валют
+def get_currency_rate(base_currency, target_currency):
+    url = f'https://openexchangerates.org/api/latest.json?app_id={api_key}&base={base_currency}'
+    response = requests
